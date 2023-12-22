@@ -22,7 +22,7 @@ export function Nav({ v33, vipAccess = false, logo, checkout }) {
             <img
                 src={logo}
                 alt="logo"
-                width={120}
+                width={70}
                 sizes="100vw"
                 style={{
                     objectFit: "contain",

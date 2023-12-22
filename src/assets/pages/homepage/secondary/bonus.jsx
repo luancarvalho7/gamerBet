@@ -23,9 +23,9 @@ export function Bonus({ img, affLink }) {
             <div className="imgheaderBlock"></div>
 
             <div className="bonusContent borderSpacing">
-                <img src="https://i.postimg.cc/3RW6RXxX/bullsbet.webp" className="bonusHouse" alt="" />
+                <img src="https://i.imgur.com/inEJWxA.png" className="bonusHouse" alt="" />
                 <div className="bh-txt">
-                    <h3 className='housetitle txt-gradient'>Bulls Bet</h3>
+                    <h3 className='housetitle txt-gradient'>Zin Bets</h3>
                     <h2>Única plataforma onde os
                         analistas trabalham e o BUG Funciona!</h2>
                 </div>

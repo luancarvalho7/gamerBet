@@ -18,7 +18,7 @@ export function ChatPage({
     analyst = "John Doe",
     profit = 999999,
     onlinePlayers = 999,
-    affLink = "https://go.aff.bullsbetaffiliate.com/64ep1444?source_id=app",
+    affLink = "https://zinbets.com/?ref=ETE5EROT5B",
     v33 = false,
     vipAccess = false,
     lastDayProfit = 0,
