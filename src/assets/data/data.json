@@ -1,17 +1,5 @@
 [
     {
-        "game": "NinjaCrash",
-        "vip": false,
-        "profit": 13000,
-        "analyst": ["Luiz R.", "Pedro A."],
-        "onlinePlayers": 58,
-        "gameImage": "https://i.postimg.cc/44F4TmXH/ninjacrash.png",
-        "analystPfp": "https://i.postimg.cc/P5n9n4DV/pink.png",
-        "ifrCassinoPix": "https://go.aff.7k-partners.com/sj7lv6oa?source_id=app",
-        "ifrSkyBet":"https://eskybet.com/cadastro?afiliado=00",
-        "type":"slots"
-    },
-    {
         "game": "Mines",
         "vip": false,
         "profit": 10100,
