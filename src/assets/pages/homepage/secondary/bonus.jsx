@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Scrollbar } from '../../../components/scrollbar/scrollbar'
 import './bonus.css'
-export function Bonus({ img, affLink }) {
+export function Bonus({ img, affLink, setFullFill }) {
 
 
     const [iFrameOn, setiFrameOn] = useState(false)
@@ -12,6 +12,17 @@ export function Bonus({ img, affLink }) {
         // Add more styles as needed
     };
 
+
+    function handleGetBonusClick() {
+        setiFrameOn(true)
+
+
+        setFullFill(true)
+
+        setTimeout(() => localStorage.setItem('btnClicked', 'true'), 3000
+        )
+
+    }
 
     return (
         <section id="bonusPage">
@@ -29,7 +40,7 @@ export function Bonus({ img, affLink }) {
                     <h2>Única plataforma onde os
                         analistas trabalham e o BUG Funciona!</h2>
                 </div>
-                <button className='bg-gradient bullsCta' onClick={() => setiFrameOn(true)} >RESGATAR BÔNUS</button>
+                <button className='bg-gradient bullsCta' onClick={() => handleGetBonusClick()} >RESGATAR BÔNUS</button>
             </div>
             <div className="warningstroke">
                 <div className="warning">

@@ -35,6 +35,7 @@ function App() {
   const [affLink, setAffLink] = useState(appData.affLink)
   const [vipAccess, setVipAccess] = useState(false)
 
+  const [fullFill, setFullFill] = useState(false)
 
   const [selectedGame, setSGame] = useState({
 
@@ -277,7 +278,8 @@ function App() {
           <Nav vipAccess={vipAccess} logo={appData.logo} checkout={appData.vipCheckout} />
           <SwiperNotis data={data} />
 
-          <BottomNav vipAccess={vipAccess} extrapages={appData.extrapages} checkout={appData.vipCheckout} />
+
+          <BottomNav vipAccess={vipAccess} fullFill={fullFill} extrapages={appData.extrapages} checkout={appData.vipCheckout} />
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home data={gamesData} selectedGame={selectedGame} setSGame={setSGame} vipAccess={false} checkout={appData.vipCheckout} communityLink={appData.community} banners={appData.banners} vipcta={appData.vipcta} />} />
@@ -295,7 +297,7 @@ function App() {
               lastDayProfit={selectedGame.lastDayProfit}
               currentDayProfit={selectedGame.currentDayProfit}
             />} />
-            <Route path='/bonus' element={<Bonus inicio={inicio} affLink={affLink} img={appData.pageheaderes.bonus}
+            <Route path='/bonus' element={<Bonus inicio={inicio} affLink={affLink} setFullFill={setFullFill} img={appData.pageheaderes.bonus}
             />} />
             <Route path='/lives' element={<Lives img={appData.pageheaderes.lives} telegramLink={appData.community} />} />
             <Route path='/tutorial' element={<Tutorial />} />

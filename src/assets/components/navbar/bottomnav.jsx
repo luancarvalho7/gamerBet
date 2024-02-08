@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import './bottomnav.css'
+import { ProgressBar } from '../progressBar/progress'
 
 const VipDmd = () => {
     return (
@@ -55,7 +56,7 @@ const ResgateBonus = () => {
 }
 
 
-export function BottomNav({ v33, vipAccess = false, extrapages, checkout}) {
+export function BottomNav({ v33, vipAccess = false, extrapages, checkout, fullFill}) {
 
     console.log(extrapages)
 
@@ -79,6 +80,9 @@ export function BottomNav({ v33, vipAccess = false, extrapages, checkout}) {
     return (
         <>
             <nav className="bottomNav">
+            <ProgressBar fullFill={fullFill}/>
+
+
                 <div className="bn-content">
                     <button
                         onClick={() => switchPage(vipAccess ? '/modevip'  : '/')}  
@@ -122,6 +126,7 @@ export function BottomNav({ v33, vipAccess = false, extrapages, checkout}) {
                             </a>
                         </button>}
                 </div>
+                
             </nav>
         </>
     );
